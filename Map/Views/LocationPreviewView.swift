@@ -54,7 +54,7 @@ extension LocationPreviewView {
                     .clipShape(RoundedRectangle(cornerRadius: 15))
             }
         }
-        .padding(2)
+        .padding(3)
         .background(.white)
         .clipShape(RoundedRectangle(cornerRadius: 15))
     }
@@ -72,7 +72,7 @@ extension LocationPreviewView {
     
     private var learnMoreButton: some View {
         Button {
-            
+            vm.sheetLocation = location
         } label: {
             Text("Learn more")
                 .font(.headline)

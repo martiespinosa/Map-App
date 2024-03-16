@@ -17,6 +17,7 @@
 		41F1ACDA2BA5BF2100C58CAE /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F1ACD92BA5BF2100C58CAE /* LocationsViewModel.swift */; };
 		41F1ACDC2BA5CF5900C58CAE /* LocationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F1ACDB2BA5CF5900C58CAE /* LocationsListView.swift */; };
 		41F1ACDE2BA5E7E900C58CAE /* LocationPreviewView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F1ACDD2BA5E7E900C58CAE /* LocationPreviewView.swift */; };
+		41F1ACE02BA63A6900C58CAE /* LocationDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F1ACDF2BA63A6900C58CAE /* LocationDetailView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +32,7 @@
 		41F1ACD92BA5BF2100C58CAE /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
 		41F1ACDB2BA5CF5900C58CAE /* LocationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsListView.swift; sourceTree = "<group>"; };
 		41F1ACDD2BA5E7E900C58CAE /* LocationPreviewView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationPreviewView.swift; sourceTree = "<group>"; };
+		41F1ACDF2BA63A6900C58CAE /* LocationDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationDetailView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +99,7 @@
 				41F1ACD72BA5B81200C58CAE /* LocationsView.swift */,
 				41F1ACDB2BA5CF5900C58CAE /* LocationsListView.swift */,
 				41F1ACDD2BA5E7E900C58CAE /* LocationPreviewView.swift */,
+				41F1ACDF2BA63A6900C58CAE /* LocationDetailView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -189,6 +192,7 @@
 			files = (
 				41F1ACD62BA5B4E100C58CAE /* LocationsDataService.swift in Sources */,
 				41F1ACDC2BA5CF5900C58CAE /* LocationsListView.swift in Sources */,
+				41F1ACE02BA63A6900C58CAE /* LocationDetailView.swift in Sources */,
 				41F1ACDE2BA5E7E900C58CAE /* LocationPreviewView.swift in Sources */,
 				41F1ACDA2BA5BF2100C58CAE /* LocationsViewModel.swift in Sources */,
 				41F1ACC22BA5B03D00C58CAE /* ContentView.swift in Sources */,
