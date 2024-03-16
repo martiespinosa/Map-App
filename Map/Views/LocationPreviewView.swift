@@ -19,16 +19,19 @@ struct LocationPreviewView: View {
                 titleSection
             }
             
-            VStack(spacing: 18) {
+            VStack(spacing: 20) {
                 learnMoreButton
-                nextButton
+                HStack(spacing: 16) {
+                    previousButton
+                    nextButton
+                }
             }
         }
         .padding(20)
         .background(
             RoundedRectangle(cornerRadius: 15)
                 .fill(.ultraThinMaterial)
-                .offset(y: 35)
+                .offset(y: 45)
         )
         .clipShape(RoundedRectangle(cornerRadius: 15))
     }
@@ -51,7 +54,7 @@ extension LocationPreviewView {
                     .clipShape(RoundedRectangle(cornerRadius: 15))
             }
         }
-        .padding(4)
+        .padding(2)
         .background(.white)
         .clipShape(RoundedRectangle(cornerRadius: 15))
     }
@@ -73,7 +76,7 @@ extension LocationPreviewView {
         } label: {
             Text("Learn more")
                 .font(.headline)
-                .frame(width: 145, height: 45)
+                .frame(width: 120, height: 40)
         }
         .buttonStyle(.borderedProminent)
         .clipShape(RoundedRectangle(cornerRadius: 15))
@@ -83,9 +86,21 @@ extension LocationPreviewView {
         Button {
             vm.nextButtonPressed()
         } label: {
-            Text("Next")
+            Image(systemName: "arrow.right")
                 .font(.headline)
-                .frame(width: 145, height: 45)
+                .frame(width: 40, height: 40)
+        }
+        .buttonStyle(.bordered)
+        .clipShape(RoundedRectangle(cornerRadius: 15))
+    }
+    
+    private var previousButton: some View {
+        Button {
+            vm.previousButtonPressed()
+        } label: {
+            Image(systemName: "arrow.left")
+                .font(.headline)
+                .frame(width: 40, height: 40)
         }
         .buttonStyle(.bordered)
         .clipShape(RoundedRectangle(cornerRadius: 15))

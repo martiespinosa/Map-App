@@ -28,6 +28,9 @@ class LocationsViewModel: ObservableObject {
     // Show list of locations
     @Published var showLocationsList: Bool = false
     
+    // For next or previous location movement of transition
+    @Published var rightDirection: Bool = true
+    
     init() {
         let locations = LocationsDataService.locations
         self.locations = locations
@@ -55,13 +58,34 @@ class LocationsViewModel: ObservableObject {
         }
     }
     
+    func showNextLocation2(location: Location) {
+        mapLocation = location
+        showLocationsList = false
+    }
+    
     func nextButtonPressed() {
+        rightDirection = true
         guard let currentIndex = locations.firstIndex(where: { $0 == mapLocation }) else { return }
         
         let nextIndex = currentIndex + 1
         guard locations.indices.contains(nextIndex) else {
             guard let firstLocation = locations.first else { return }
             showNextLocation(location: firstLocation)
+            return
+        }
+        
+        let nextLocation = locations[nextIndex]
+        showNextLocation(location: nextLocation)
+    }
+    
+    func previousButtonPressed() {
+        rightDirection = false
+        guard let currentIndex = locations.firstIndex(where: { $0 == mapLocation }) else { return }
+        
+        let nextIndex = currentIndex - 1
+        guard locations.indices.contains(nextIndex) else {
+            guard let lastLocation = locations.last else { return }
+            showNextLocation(location: lastLocation)
             return
         }
         

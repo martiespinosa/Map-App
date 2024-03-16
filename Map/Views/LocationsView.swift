@@ -14,27 +14,12 @@ struct LocationsView: View {
     
     var body: some View {
         ZStack {
-            Map(position: $vm.mapRegion)
+            mapLayer
             
             VStack(spacing: 0) {
-                header
-                    .padding()
-                
+                header.padding()
                 Spacer()
-                
-                ZStack {
-                    ForEach(vm.locations) { location in
-                        if vm.mapLocation == location {
-                            LocationPreviewView(location: location)
-                                .shadow(color: .black.opacity(0.3), radius: 20, x: 0, y: 15)
-                                .padding()
-                                .transition(.asymmetric(
-                                    insertion: .move(edge: .trailing),
-                                    removal: .move(edge: .leading))
-                                )
-                        }
-                    }
-                }
+                locationsPreviewStack
             }
         }
     }
@@ -74,9 +59,37 @@ extension LocationsView {
             }
         }
         .background(.thinMaterial) // this is awesome
-        .clipped()
         .clipShape(RoundedRectangle(cornerRadius: 15))
         .shadow(color: .black.opacity(0.3), radius: 20, x: 0, y: 15)
+    }
+    
+    private var mapLayer: some View {
+        Map(position: $vm.mapRegion) {
+            ForEach(vm.locations) { location in
+                if vm.mapLocation == location {
+                    Marker(location.name, coordinate: location.coordinates)
+                }
+            }
+        }
+    }
+    
+    private var locationsPreviewStack: some View {
+        ZStack {
+            //TabView {
+                ForEach(vm.locations) { location in
+                    if vm.mapLocation == location {
+                        LocationPreviewView(location: location)
+                            .shadow(color: .black.opacity(0.3), radius: 20, x: 0, y: 15)
+                            .padding()
+                            .transition(.asymmetric(
+                                insertion: .move(edge: vm.rightDirection ? .trailing : .leading),
+                                removal: .move(edge: vm.rightDirection ? .leading : .trailing))
+                            )
+                    }
+                }
+            //}
+            //.tabViewStyle(.page(indexDisplayMode: .never))
+        }
     }
     
 }
