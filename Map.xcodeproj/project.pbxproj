@@ -15,6 +15,7 @@
 		41F1ACD62BA5B4E100C58CAE /* LocationsDataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F1ACD52BA5B4E100C58CAE /* LocationsDataService.swift */; };
 		41F1ACD82BA5B81200C58CAE /* LocationsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F1ACD72BA5B81200C58CAE /* LocationsView.swift */; };
 		41F1ACDA2BA5BF2100C58CAE /* LocationsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F1ACD92BA5BF2100C58CAE /* LocationsViewModel.swift */; };
+		41F1ACDC2BA5CF5900C58CAE /* LocationsListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F1ACDB2BA5CF5900C58CAE /* LocationsListView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -27,6 +28,7 @@
 		41F1ACD52BA5B4E100C58CAE /* LocationsDataService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LocationsDataService.swift; sourceTree = "<group>"; };
 		41F1ACD72BA5B81200C58CAE /* LocationsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsView.swift; sourceTree = "<group>"; };
 		41F1ACD92BA5BF2100C58CAE /* LocationsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsViewModel.swift; sourceTree = "<group>"; };
+		41F1ACDB2BA5CF5900C58CAE /* LocationsListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationsListView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +93,7 @@
 			isa = PBXGroup;
 			children = (
 				41F1ACD72BA5B81200C58CAE /* LocationsView.swift */,
+				41F1ACDB2BA5CF5900C58CAE /* LocationsListView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -182,6 +185,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				41F1ACD62BA5B4E100C58CAE /* LocationsDataService.swift in Sources */,
+				41F1ACDC2BA5CF5900C58CAE /* LocationsListView.swift in Sources */,
 				41F1ACDA2BA5BF2100C58CAE /* LocationsViewModel.swift in Sources */,
 				41F1ACC22BA5B03D00C58CAE /* ContentView.swift in Sources */,
 				41F1ACD82BA5B81200C58CAE /* LocationsView.swift in Sources */,
