@@ -22,6 +22,7 @@ class LocationsDataService {
                 "rome-colosseum-3",
             ],
             link: "https://en.wikipedia.org/wiki/Colosseum"),
+        
         Location(
             name: "Pantheon",
             cityName: "Rome",
@@ -33,6 +34,7 @@ class LocationsDataService {
                 "rome-pantheon-3",
             ],
             link: "https://en.wikipedia.org/wiki/Pantheon,_Rome"),
+        
         Location(
             name: "Trevi Fountain",
             cityName: "Rome",
@@ -44,6 +46,7 @@ class LocationsDataService {
                 "rome-trevifountain-3",
             ],
             link: "https://en.wikipedia.org/wiki/Trevi_Fountain"),
+        
         Location(
             name: "Eiffel Tower",
             cityName: "Paris",
@@ -54,6 +57,7 @@ class LocationsDataService {
                 "paris-eiffeltower-2",
             ],
             link: "https://en.wikipedia.org/wiki/Eiffel_Tower"),
+        
         Location(
             name: "Louvre Museum",
             cityName: "Paris",
@@ -65,6 +69,45 @@ class LocationsDataService {
                 "paris-louvre-3",
             ],
             link: "https://en.wikipedia.org/wiki/Louvre"),
-    ]
+        
+        Location(
+             name: "Machu Picchu",
+             cityName: "Cusco",
+             coordinates: CLLocationCoordinate2D(latitude: -13.16331, longitude: -72.54544),
+             description: "Machu Picchu, the 'Lost City of the Incas,' is a breathtaking 15th-century citadel perched high in the Peruvian Andes mountains. This UNESCO World Heritage Site showcases remarkable Inca stonework, agricultural terraces, temples, and sanctuaries, offering a glimpse into the life of the Inca Empire.",
+             imageNames: ["machu-pichu-1"],
+             link: "https://en.wikipedia.org/wiki/Machu_Picchu"),
+
+        Location(
+             name: "Taj Mahal",
+             cityName: "Agra",
+             coordinates: CLLocationCoordinate2D(latitude: 27.17527, longitude: 78.0421),
+             description: "The Taj Mahal, an ivory-white marble mausoleum located in Agra, India, is a UNESCO World Heritage Site and one of the most recognized buildings in the world. Built by Mughal emperor Shah Jahan in memory of his third wife Mumtaz Mahal, it's a breathtaking example of Mughal architecture, blending Islamic, Persian, and Indian styles. The Taj Mahal is a symbol of eternal love and a testament to exquisite craftsmanship.",
+             imageNames: ["taj-mahal-1"],
+             link: "https://en.wikipedia.org/wiki/Taj_Mahal"),
     
+        Location(
+             name: "Statue of Liberty",
+             cityName: "New York",
+             coordinates: CLLocationCoordinate2D(latitude: 40.68925, longitude: -74.0445),
+             description: "The Statue of Liberty is a colossal neoclassical sculpture on Liberty Island in New York Harbor in New York City. A gift from the people of France to the people of the United States to commemorate the centennial of American independence, it's a symbol of freedom and democracy. Lady Liberty, as she's affectionately called, welcomes immigrants arriving in New York Harbor and is a powerful reminder of America's ideals.",
+             imageNames: ["statue-of-liberty-1"],
+             link: "https://en.wikipedia.org/wiki/Statue_of_Liberty"),
+
+        Location(
+             name: "Sagrada Familia",
+             cityName: "Barcelona",
+             coordinates: CLLocationCoordinate2D(latitude: 41.40363, longitude: 2.17435),
+             description: "The Sagrada Familia is an unfinished Roman Catholic basilica in Barcelona, Spain, designed by Antoni Gaudí. It's one of Gaudí's most famous works and a top tourist attraction in Spain. Construction began in 1882 and is still ongoing. The Sagrada Familia is a masterpiece of Catalan Modernism and a symbol of Barcelona.",
+             imageNames: ["sagrada-familia-1"],
+             link: "https://en.wikipedia.org/wiki/Sagrada_Familia"),
+
+        Location(
+             name: "Park Güell",
+             cityName: "Barcelona",
+             coordinates: CLLocationCoordinate2D(latitude: 41.41248, longitude: 2.15804),
+             description: "Park Güell is a public park system with gardens and architectural elements situated on the hilltop overlooking Barcelona, Catalonia, Spain. Designed by Antoni Gaudí and built from 1900 to 1914, Park Güell is one of Gaudí's most famous works and a popular tourist attraction. It's an example of Catalan Modernism and a UNESCO World Heritage Site.",
+             imageNames: ["park-guell-1"],
+             link: "https://en.wikipedia.org/wiki/Park_Güell"),
+    ]
 }
