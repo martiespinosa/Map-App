@@ -71,21 +71,22 @@ class LocationsDataService {
             link: "https://en.wikipedia.org/wiki/Louvre"),
         
         Location(
-             name: "Machu Picchu",
-             cityName: "Cusco",
-             coordinates: CLLocationCoordinate2D(latitude: -13.16331, longitude: -72.54544),
-             description: "Machu Picchu, the 'Lost City of the Incas,' is a breathtaking 15th-century citadel perched high in the Peruvian Andes mountains. This UNESCO World Heritage Site showcases remarkable Inca stonework, agricultural terraces, temples, and sanctuaries, offering a glimpse into the life of the Inca Empire.",
-             imageNames: ["machu-pichu-1"],
-             link: "https://en.wikipedia.org/wiki/Machu_Picchu"),
+            name: "Great Pyramid of Giza",
+            cityName: "Giza",
+            coordinates: CLLocationCoordinate2D(latitude: 29.9792, longitude: 31.1342),
+            description: "The Great Pyramid of Giza, also known as the Pyramid of Khufu or the Pyramid of Cheops, is the oldest and largest of the three pyramids in the Giza pyramid complex. It is one of the Seven Wonders of the Ancient World and has fascinated visitors for millennia with its monumental size and precision engineering.",
+            imageNames: ["pyramid-giza-1"],
+            link: "https://en.wikipedia.org/wiki/Great_Pyramid_of_Giza"),
 
+        
         Location(
-             name: "Taj Mahal",
-             cityName: "Agra",
-             coordinates: CLLocationCoordinate2D(latitude: 27.17527, longitude: 78.0421),
-             description: "The Taj Mahal, an ivory-white marble mausoleum located in Agra, India, is a UNESCO World Heritage Site and one of the most recognized buildings in the world. Built by Mughal emperor Shah Jahan in memory of his third wife Mumtaz Mahal, it's a breathtaking example of Mughal architecture, blending Islamic, Persian, and Indian styles. The Taj Mahal is a symbol of eternal love and a testament to exquisite craftsmanship.",
-             imageNames: ["taj-mahal-1"],
-             link: "https://en.wikipedia.org/wiki/Taj_Mahal"),
-    
+            name: "Central Park",
+            cityName: "New York",
+            coordinates: CLLocationCoordinate2D(latitude: 40.7851, longitude: -73.9683),
+            description: "Central Park is an iconic urban park located in the heart of Manhattan, New York City. Spanning 843 acres, it offers a peaceful oasis amidst the bustling city, featuring lush greenery, scenic pathways, recreational facilities, lakes, and historical landmarks such as Bethesda Terrace, Bow Bridge, and the Central Park Zoo.",
+            imageNames: ["central-park-1"],
+            link: "https://en.wikipedia.org/wiki/Central_Park"),
+
         Location(
              name: "Statue of Liberty",
              cityName: "New York",
@@ -105,7 +106,7 @@ class LocationsDataService {
         Location(
              name: "Park Güell",
              cityName: "Barcelona",
-             coordinates: CLLocationCoordinate2D(latitude: 41.41248, longitude: 2.15804),
+             coordinates: CLLocationCoordinate2D(latitude: 41.4139, longitude: 2.1525),
              description: "Park Güell is a public park system with gardens and architectural elements situated on the hilltop overlooking Barcelona, Catalonia, Spain. Designed by Antoni Gaudí and built from 1900 to 1914, Park Güell is one of Gaudí's most famous works and a popular tourist attraction. It's an example of Catalan Modernism and a UNESCO World Heritage Site.",
              imageNames: ["park-guell-1"],
              link: "https://en.wikipedia.org/wiki/Park_Güell"),
