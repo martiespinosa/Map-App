@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		411EF9982BC2BC7200FB36FB /* Launch Screen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 411EF9972BC2BC7200FB36FB /* Launch Screen.storyboard */; };
 		41F1ACC02BA5B03D00C58CAE /* MapApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F1ACBF2BA5B03D00C58CAE /* MapApp.swift */; };
 		41F1ACC22BA5B03D00C58CAE /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 41F1ACC12BA5B03D00C58CAE /* ContentView.swift */; };
 		41F1ACC72BA5B03E00C58CAE /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 41F1ACC62BA5B03E00C58CAE /* Preview Assets.xcassets */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		411EF9972BC2BC7200FB36FB /* Launch Screen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = "Launch Screen.storyboard"; sourceTree = "<group>"; };
 		41F1ACBC2BA5B03D00C58CAE /* Map.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Map.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		41F1ACBF2BA5B03D00C58CAE /* MapApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapApp.swift; sourceTree = "<group>"; };
 		41F1ACC12BA5B03D00C58CAE /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				41F1ACDB2BA5CF5900C58CAE /* LocationsListView.swift */,
 				41F1ACDD2BA5E7E900C58CAE /* LocationPreviewView.swift */,
 				41F1ACDF2BA63A6900C58CAE /* LocationDetailView.swift */,
+				411EF9972BC2BC7200FB36FB /* Launch Screen.storyboard */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -180,6 +183,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				411EF9982BC2BC7200FB36FB /* Launch Screen.storyboard in Resources */,
 				41F1ACCE2BA5B14D00C58CAE /* Assets.xcassets in Resources */,
 				41F1ACC72BA5B03E00C58CAE /* Preview Assets.xcassets in Resources */,
 			);
